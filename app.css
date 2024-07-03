@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('pic/makup.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 15px;
+    /* Ensure some padding on the sides */
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items in a column */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    /* Container width */
+
+
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    /* Adjust text width */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    background-color: #F7717D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+/* Services Section */
+
+.services {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('pic/combii.jpg');
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-top: -11px;
+    color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.service.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service h3 {
+    color: #fc4756;
+    margin-bottom: 15px;
+}
+
+.service p {
+    margin: 5px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.service .duration {
+    font-weight: bold;
+}
+
+/* Navbar */
+/* Navbar Brand */
+.navbar-brand {
+    color: #F7717D;
+    /* Text color for the brand/logo */
+    font-size: 1.5rem;
+    /* Font size for the brand/logo */
+    font-weight: bold;
+    /* Bold font weight for emphasis */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+    color: #F7717D;
+    /* Color change on hover */
+}
+
+.navbar-text {
+    color: #16001E;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.customer-section h2,
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #F7717D;
+
+}
+
+.customer-section {
+    background-image: url('pic/images2.jfif');
+    background-size: cover;
+}
+
+
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #16001E;
+    /* Text color for nav links */
+    font-size: 1.1rem;
+    /* Font size for nav links */
+    font-weight: bold;
+    /* Bold font weight for emphasis */
+    margin-right: 15px;
+    /* Right margin between nav links */
+    transition: color 0.3s;
+    /* Smooth transition for hover effect */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F7717D;
+    /* Color change on hover */
+}
+
+.navbar-toggler {
+    border: none;
+    /* Remove default border */
+    background-color: #F7717D;
+    /* Custom background color */
+    padding: 10px 15px;
+    /* Adjust padding */
+    border-radius: 4px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.navbar-toggler:hover {
+    background-color: #F7B2B7;
+    /* Darker background color on hover */
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom icon color */
+}
+
+
+/* Reviews Section */
+.reviews {
+    padding: 20px;
+    margin: 0 auto;
+    background: #F7717D;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.reviews .carousel-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.reviews .carousel-item h4 {
+    font-size: 24px;
+    color: #fff
+}
+
+.reviews .carousel-item p {
+    font-size: 18px;
+    color: #555;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-section {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.0rem;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contact-section h4 {
+    color: #F7717D;
+}
+
+.contact-section p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-section .form-group label {
+    font-weight: bold;
+}
+
+.contact-section .btn-primary {
+    background-color: #F7717D;
+    border-color: #F7717D;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #444b50;
+    border-color: #444b50;
+}
+
+.custom-map-height {
+    height: 210px;
+    border-radius: 15px;
+    /* Adjust the height as needed */
+}
+
+.about-section h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.about-section h4 {
+    color: #fc4756;
+    font-weight: 200;
+}
+
+.about-section p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17.5px;
+}
+
+.about-bg {
+    background-image: url('pic/combii.jpg');
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .hero .container {
+        flex-direction: row;
+        /* Revert to row direction for larger screens */
+    }
+
+    .hero-text {
+        max-width: 50%;
+        /* Adjust text width for larger screens */
+        text-align: left;
+
+    }
+
+    .hero-image {
+        max-width: 100%;
+        /* Adjust image width for larger screens */
+    }
+
+    .navbar-nav {
+        margin: 0;
+        /* Reset margin for better alignment */
+    }
+
+    .nav-link {
+        margin: 10px 0;
+        /* Adjust margin for better spacing */
+    }
+}
+
+.footer p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
